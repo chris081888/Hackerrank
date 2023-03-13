@@ -81,7 +81,7 @@ class Result
         for (int i = n; i > 0; i--) // So, we start with i = n, which is the number of lines the user requested. We will need to print 6 total lines, so we'll count down from 6 and start at 0.
         {
             // Before we start our for statement here, ler's 
-            for (int j = i-1; j >= 0; j--) // We need a new intiger, because i still exists here. Since we want to print 1 less space than we want to print symbols, we will make j = i - 1. If j = 4, the first line will mean we print 3 spaces.
+            for (int j = i-2; j >= 0; j--) // We need a new intiger, because i still exists here. Since we want to print 1 less space than we want to print symbols, so we need to take away 2 (one for the space, one for the last symbol) we will make j = i - 2. If j = 4, the first line will mean we print 3 spaces.
             {
                 Console.Write(" "); // print the space without a hardline return.
             }
